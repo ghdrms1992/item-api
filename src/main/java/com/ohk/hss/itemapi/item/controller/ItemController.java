@@ -3,6 +3,7 @@ package com.ohk.hss.itemapi.item.controller;
 import com.ohk.hss.itemapi.item.dto.ItemDto;
 import com.ohk.hss.itemapi.item.service.ItemService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +12,8 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(value = {"/i/items"})
+@Slf4j
+@RequestMapping(value = {"/api/i/items"})
 public class ItemController {
 
     private final ItemService itemService;
@@ -19,6 +21,7 @@ public class ItemController {
     @GetMapping(value = {""})
     public ResponseEntity<?> getItems() {
         List<ItemDto.Response> itemList = itemService.getItems();
+        log.info("[ItemController >> getItems] itemList : {}", itemList);
         return ResponseEntity.ok().body(itemList);
     }
 

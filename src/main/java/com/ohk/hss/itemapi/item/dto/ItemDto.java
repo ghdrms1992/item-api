@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.Setter;
 
+import java.util.List;
+
 public class ItemDto {
 
     @Builder
@@ -26,11 +28,16 @@ public class ItemDto {
         private String itemName;
 
         public static ItemDto.Response from(ItemEntity itemEntity) {
-            ItemDto.Response response = Response.builder()
-                                                .itemNo(itemEntity.getItemNo())
-                                                .itemName(itemEntity.getItemName())
-                                                .build();
-            return response;
+            return Response.builder()
+                           .itemNo(itemEntity.getItemNo())
+                           .itemName(itemEntity.getItemName())
+                           .build();
+        }
+
+        public static List<ItemDto.Response> from(List<ItemEntity> itemEntityList) {
+            return itemEntityList.stream()
+                                 .map(ItemDto.Response::from)
+                                 .toList();
         }
     }
 }

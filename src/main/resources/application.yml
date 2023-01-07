@@ -1,7 +1,19 @@
-# data-source
+#spring
 spring:
+  #data-source
   datasource:
-    url: jdbc:mysql://localhost:3306/hss
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hss?serverTimezone=UTC
     username: root
     password: 1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
+  #jpa
+  jpa:
+    properties:
+      hibernate:
+        #실행쿼리 콘솔 출력
+        show_sql: true
+        #출력 쿼리 가독성 좋게 포맷팅
+        format_sql: true
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.MySQL8Dialect
