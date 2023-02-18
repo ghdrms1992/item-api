@@ -1,4 +1,4 @@
-package com.ohk.hss.itemapi.item.constant;
+package com.ohk.hss.item.constant;
 
 import lombok.RequiredArgsConstructor;
 

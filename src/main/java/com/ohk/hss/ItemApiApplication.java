@@ -1,4 +1,4 @@
-package com.ohk.hss.itemapi;
+package com.ohk.hss;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

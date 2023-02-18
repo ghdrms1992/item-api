@@ -1,6 +1,6 @@
-package com.ohk.hss.itemapi.item.dto;
+package com.ohk.hss.item.dto;
 
-import com.ohk.hss.itemapi.item.entity.ItemEntity;
+import com.ohk.hss.item.entity.ItemEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Data;

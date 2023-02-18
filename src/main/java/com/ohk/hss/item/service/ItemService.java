@@ -1,8 +1,8 @@
-package com.ohk.hss.itemapi.item.service;
+package com.ohk.hss.item.service;
 
-import com.ohk.hss.itemapi.item.dto.ItemDto;
-import com.ohk.hss.itemapi.item.entity.ItemEntity;
-import com.ohk.hss.itemapi.item.repository.ItemRepository;
+import com.ohk.hss.item.dto.ItemDto;
+import com.ohk.hss.item.entity.ItemEntity;
+import com.ohk.hss.item.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.ohk.hss.itemapi.item.entity;
+package com.ohk.hss.item.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,7 +1,7 @@
-package com.ohk.hss.itemapi.item.controller;
+package com.ohk.hss.item.controller;
 
-import com.ohk.hss.itemapi.item.dto.ItemDto;
-import com.ohk.hss.itemapi.item.service.ItemService;
+import com.ohk.hss.item.dto.ItemDto;
+import com.ohk.hss.item.service.ItemService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
